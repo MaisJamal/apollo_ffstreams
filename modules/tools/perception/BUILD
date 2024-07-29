@@ -33,6 +33,8 @@ apollo_py_binary(
     srcs = ["print_perception.py"],
     deps = [
         "//cyber/python/cyber_py3:cyber",
+        "//cyber/python/cyber_py3:cyber_time",
+        "//modules/common_msgs/planning_msgs:planning_py_pb2",
         "//modules/common_msgs/perception_msgs:perception_obstacle_py_pb2",
     ],
 )
